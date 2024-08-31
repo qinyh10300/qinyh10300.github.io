@@ -15,4 +15,4 @@ redirect_from:
 
 [Click here to download my latest CV](/files/CV31-8-2024.pdf).
 
-Last updated: Aug 4 2024. 
+Last updated: Aug 31 2024. 
