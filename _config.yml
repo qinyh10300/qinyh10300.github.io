@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Qinyh's Homepage"
+title                    : "Yihua Qin's Homepage"
 title_separator          : "-"
-name                     : &name "Qinyh"
-description              : &description "buiduidui"
+name                     : &name "Yihua Qin"
+# description              : &description "buiduidui"
 url                      : https://qinyh10300.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "qinyh10300/qinyh10300.github.io"
@@ -80,14 +80,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "Chuanyu Li"
-  avatar           : "chuanyu-profile.jpg"
-  bio              : "iduidui."
+  name             : "Yihua Qin"
+  avatar           : "qinyh_image.jpg"
+  # bio              : "iduidui."
   location         : # "Location"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : # "https://scholar.google.com/citations?user=i-QiNPIAAAAJ"
-  email            : "cyliandzyz@gmail.com loveoftenblindsus@gmail.com"
+  email            : "qinyh22@mails.tsinghua.edu.cn loveoftenblindsus@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "cyliizyz"
+  github           : "qinyh10300"
   google_plus      :
   keybase          : 
   instagram        :
