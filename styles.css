@@ -1,0 +1,1000 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: white;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+/* Sections */
+section {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.profile-container {
+    display: flex;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    align-items: flex-start;
+}
+
+.profile-left {
+    flex: 0 0 300px;
+    text-align: center;
+}
+
+.profile-right {
+    flex: 1;
+    text-align: left;
+}
+
+.about-me h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.about-me h3 {
+    color: #2c3e50;
+    margin: 1.5rem 0 0.5rem 0;
+}
+
+.about-me p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.education-list {
+    list-style: none;
+    padding: 0;
+}
+
+.education-list li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-left: 3px solid var(--primary-color);
+    background: linear-gradient(135deg, var(--bg-light) 0%, white 100%);
+    box-shadow: var(--shadow);
+}
+
+.school-logo {
+    flex: 0 0 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.school-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.education-content {
+    flex: 1;
+}
+
+.education-list .degree {
+    display: block;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.education-list .institution {
+    display: block;
+    color: #666;
+}
+
+.education-list .year {
+    display: block;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.news-list {
+    list-style: none;
+    padding: 0;
+}
+
+.news-list li {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    border-left: 4px solid var(--primary-color);
+}
+
+.news-list li:hover {
+    transform: translateX(5px);
+}
+
+.news-list .date {
+    flex-shrink: 0;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.3rem 0.6rem;
+    background: rgba(0, 102, 204, 0.1);
+    border-radius: 4px;
+}
+
+.news-list a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.news-list a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--primary-color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.news-list a:hover::after {
+    transform: scaleX(1);
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid #007bff;
+}
+
+.tagline {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+/* Projects Section */
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.project-item {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: white;
+}
+
+.project-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.project-image {
+    flex: 0 0 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.project-content {
+    flex: 1;
+}
+
+.project-item:hover .project-image img {
+    transform: scale(1.05);
+}
+
+/* Projects Section Updates */
+.project-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: #2c3e50;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.project-link:hover {
+    background-color: #0056b3;
+}
+
+.project-venue {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+}
+
+/* Publications Section */
+.publications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.publication-item {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: white;
+}
+
+.publication-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.publication-image {
+    flex: 0 0 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.publication-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.publication-content {
+    flex: 1;
+}
+
+.publication-authors {
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+.publication-venue {
+    color: #007bff;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.publication-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.pub-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.pub-link:hover {
+    background-color: #0056b3;
+}
+
+/* Sports Section */
+.sports-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.sport-card {
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.sport-card i {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f8f9fa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    section {
+        padding: 3rem 1rem;
+    }
+    
+    .publication {
+        flex-direction: column;
+    }
+    
+    .publication-image {
+        flex: 0 0 150px;
+        margin-bottom: 1rem;
+    }
+
+    .project-item,
+    .project-item.reverse,
+    .publication-item,
+    .publication-item.reverse {
+        flex-direction: column;
+    }
+
+    .project-image,
+    .publication-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .education-list li {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .school-logo {
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 968px) {
+    .profile-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .profile-left {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .profile-right {
+        width: 100%;
+    }
+}
+
+/* Research Interests */
+.interests-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.interests-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    transition: transform 0.2s;
+}
+
+.interests-list li:hover {
+    transform: translateX(5px);
+}
+
+.interests-list i {
+    color: #007bff;
+    width: 20px;
+}
+
+/* Awards Section */
+.awards-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.awards-list li {
+    margin-bottom: 0.75rem;
+    padding: 0.5rem;
+    border-left: 3px solid #28a745;
+    background-color: #f8f9fa;
+}
+
+.award-name {
+    display: block;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.award-venue {
+    display: block;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Academic Services */
+.service-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.service-list li {
+    margin-bottom: 0.75rem;
+    padding: 0.5rem;
+    border-left: 3px solid #dc3545;
+    background-color: #f8f9fa;
+}
+
+.service-role {
+    display: block;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.service-venue {
+    display: block;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Hover effects for lists */
+.awards-list li:hover,
+.service-list li:hover {
+    background-color: #f1f3f5;
+}
+
+/* CV Download Button */
+.cv-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #2c3e50;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.cv-button i {
+    font-size: 1.1rem;
+}
+
+.cv-button:hover {
+    background-color: #34495e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.cv-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Color scheme update for robotics theme */
+:root {
+    --primary-color: #0066cc;    /* Deeper blue for tech */
+    --secondary-color: #00a0dc;  /* LinkedIn blue for professionalism */
+    --accent-color: #2ecc71;     /* Green for highlights */
+    --text-primary: #2c3e50;     /* Dark blue-grey for text */
+    --text-secondary: #666;      /* Grey for secondary text */
+    --bg-light: #f8f9fa;         /* Light grey for backgrounds */
+    --shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Update existing color references */
+.nav-links a:hover,
+.social-links a:hover {
+    color: var(--primary-color);
+}
+
+.profile-photo {
+    border: 3px solid var(--secondary-color);
+}
+
+/* Research Interests styling update */
+.interests-list li {
+    background: linear-gradient(135deg, var(--bg-light) 0%, white 100%);
+    border-left: 3px solid var(--secondary-color);
+    padding: 0.75rem;
+    box-shadow: var(--shadow);
+}
+
+.interests-list i {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}
+
+/* Project and Publication cards update */
+.project-item,
+.publication-item {
+    background: linear-gradient(135deg, var(--bg-light) 0%, white 100%);
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.project-link,
+.pub-link {
+    background-color: var(--primary-color);
+}
+
+.project-link:hover,
+.pub-link:hover {
+    background-color: var(--secondary-color);
+}
+
+/* CV button update */
+.cv-button {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    border: none;
+}
+
+.cv-button:hover {
+    background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+    transform: translateY(-2px);
+}
+
+/* Add tech-inspired decorative elements */
+.section-header {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.section-header::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+}
+
+/* Update awards and services styling */
+.awards-list li,
+.service-list li {
+    border-left: 3px solid var(--secondary-color);
+    background: linear-gradient(135deg, var(--bg-light) 0%, white 100%);
+    box-shadow: var(--shadow);
+}
+
+/* Add subtle tech pattern to sections */
+section {
+    position: relative;
+    overflow: hidden;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--secondary-color), transparent);
+    opacity: 0.5;
+}
+
+/* Research Experience Section */
+.experience-list {
+    list-style: none;
+    padding: 0;
+}
+
+.experience-list li {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background: linear-gradient(135deg, var(--bg-light) 0%, white 100%);
+    box-shadow: var(--shadow);
+    border-left: 3px solid var(--primary-color);
+}
+
+.institution-logo {
+    flex: 0 0 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.institution-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.experience-content {
+    flex: 1;
+}
+
+.experience-content .position {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.experience-content .lab {
+    display: block;
+    color: #666;
+    font-weight: 500;
+}
+
+.experience-content .institution {
+    display: block;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.experience-content .duration {
+    display: block;
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+}
+
+.experience-content .responsibilities {
+    margin-top: 0.75rem;
+    padding-left: 1.25rem;
+    color: #555;
+}
+
+.experience-content .responsibilities li {
+    border: none;
+    box-shadow: none;
+    padding: 0.25rem 0;
+    margin-bottom: 0.25rem;
+    background: none;
+    display: list-item;
+    list-style-type: disc;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .experience-list li {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .institution-logo {
+        margin: 0 auto 1rem;
+    }
+    
+    .experience-content .responsibilities {
+        text-align: left;
+    }
+}
+
+/* Position Details styling */
+.position-details {
+    list-style: disc;
+    padding-left: 1.2rem;
+    margin-top: 0.5rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.position-details li {
+    margin-bottom: 0.25rem;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    background: none;
+}
+
+/* Ensure responsive design works for position details */
+@media (max-width: 768px) {
+    .position-details {
+        text-align: left;
+    }
+}
+
+/* Profile Section Updates */
+.profile-photo {
+    width: 220px;
+    height: 220px;
+    border-radius: 15px;         /* Square with rounded corners */
+    border: none;
+    box-shadow: var(--shadow);
+}
+
+.profile-left h1 {
+    font-size: 1.8rem;
+    color: var(--text-primary);
+    margin: 1rem 0 0.5rem 0;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+}
+
+/* Social Links Update */
+.social-links {
+    margin-top: 1.5rem;
+}
+
+.social-links a {
+    color: var(--text-secondary);
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+/* CV Button Update */
+.cv-button {
+    background-color: var(--primary-color);
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+.cv-button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Section Headers */
+section h2 {
+    font-size: 2rem;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60%;
+    height: 3px;
+    background: linear-gradient(to right, var(--primary-color), transparent);
+}
+
+/* Education and Research Experience */
+.education-list li {
+    background: white;
+    border-radius: 10px;
+    border-left: 4px solid var(--primary-color);
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.education-list li:hover {
+    transform: translateX(5px);
+}
+
+/* News Section */
+.news-list li {
+    padding: 1rem;
+    border-radius: 8px;
+    background: var(--bg-light);
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.news-list .date {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.news-list a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.news-list a:hover {
+    color: var(--primary-color);
+}
+
+/* Research Interests */
+.interests-list li {
+    background: white;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-color);
+    padding: 1rem;
+    box-shadow: var(--shadow);
+}
+
+.interests-list i {
+    color: var(--accent-color);
+    margin-right: 0.5rem;
+}
+
+/* Projects Section */
+.project-item {
+    border-radius: 12px;
+    overflow: hidden;
+    background: white;
+    box-shadow: var(--shadow);
+}
+
+.project-image {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.project-link {
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+/* Academic Services */
+.service-list li {
+    background: white;
+    border-radius: 8px;
+    border-left: 4px solid var(--secondary-color);
+    padding: 1rem;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.service-list li:hover {
+    transform: translateX(5px);
+}
+
+/* Navigation Updates */
+nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+.nav-links a {
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
