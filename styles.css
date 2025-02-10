@@ -498,7 +498,7 @@ footer {
 }
 
 .interests-list li:hover {
-    border-color: blue; /* 悬停时边框颜色变为蓝色 */
+    border-color: #007bff; /* 悬停时边框颜色变为蓝色 */
     transform: translateY(-5px); /* 悬停时上浮 */
 }
 
