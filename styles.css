@@ -53,6 +53,10 @@ nav {
 }
 
 /* Sections */
+.black-link {
+    color: black; /* 将链接文本颜色设置为黑色 */
+}
+
 section {
     padding: 5rem 2rem;
     max-width: 1200px;
