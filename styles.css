@@ -342,8 +342,8 @@ section {
 
 .publication-image {
     flex: 0 0 auto;
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 600px;
+    max-height: 500px;
     overflow: hidden;
     border-radius: 8px;
 }
@@ -498,7 +498,8 @@ footer {
 }
 
 .interests-list li:hover {
-    transform: translateX(5px);
+    border-color: blue; /* 悬停时边框颜色变为蓝色 */
+    transform: translateY(-5px); /* 悬停时上浮 */
 }
 
 .interests-list i {
